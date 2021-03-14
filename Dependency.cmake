@@ -44,6 +44,7 @@ set(DEP_LIBS ${DEP_LIBS} glfw3)
 ExternalProject_Add(
     dep_glad
     GIT_REPOSITORY "https://github.com/Dav1dde/glad.git"
+    GIT_TAG "v0.1.34"
     GIT_SHALLOW 1
     UPDATE_COMMAND ""
     PATCH_COMMAND ""
@@ -53,4 +54,4 @@ ExternalProject_Add(
     TEST_COMMAND ""
     )
 set(DEP_LIST ${DEP_LIST} dep_glad)
-set(DEP_SIBS ${DEP_LIBS} glad)
+set(DEP_LIBS ${DEP_LIBS} glad)
